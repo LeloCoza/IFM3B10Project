@@ -198,6 +198,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="banner.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -211,10 +212,52 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="images\04.png" />
+    <Content Include="images\12.png" />
+    <Content Include="images\13.png" />
+    <Content Include="images\beverages.png" />
+    <Content Include="images\beverages4.png" />
+    <Content Include="images\dessert1.png" />
+    <Content Include="images\dessert3.png" />
+    <Content Include="images\dessert4.png" />
+    <Content Include="images\dish1.png" />
+    <Content Include="images\dish10.png" />
+    <Content Include="images\dish11.png" />
+    <Content Include="images\dish2.png" />
+    <Content Include="images\dish4.png" />
+    <Content Include="images\dish5.png" />
+    <Content Include="images\dish6.png" />
+    <Content Include="images\dish7.png" />
+    <Content Include="images\dish8.png" />
+    <Content Include="images\facebookIkon.png" />
+    <Content Include="images\fishFingers.png" />
+    <Content Include="images\fishFingers2.png" />
+    <Content Include="images\lightbox-btn-close.png" />
+    <Content Include="images\lightbox-btn-next.png" />
+    <Content Include="images\lightbox-btn-prev.png" />
+    <Content Include="images\lightbox-ico-loading.png" />
+    <Content Include="images\logo9.png" />
+    <Content Include="images\meal.png" />
+    <Content Include="images\meal2.png" />
+    <Content Include="images\rawFish.png" />
+    <Content Include="images\rawFish3.png" />
+    <Content Include="images\sauces.png" />
+    <Content Include="images\sauces2.png" />
+    <Content Include="images\sauces3.png" />
+    <Content Include="images\sauces4.png" />
+    <Content Include="images\snoekFish2.png" />
+    <Content Include="images\twitterIcon.png" />
+    <Content Include="images\youtubeIcon.png" />
+    <Content Include="index.aspx" />
+    <Content Include="master.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\js\banner.js" />
+    <Content Include="Scripts\js\jquery-1.10.1.min.js" />
+    <Content Include="Scripts\js\jquery.js" />
+    <Content Include="Scripts\js\jquery.lightbox-0.5.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -391,6 +434,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
