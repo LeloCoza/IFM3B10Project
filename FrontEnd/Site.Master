@@ -80,9 +80,9 @@
            </div>
 
            <div style="width:1100px;margin-left:0px;">                
-               <img alt="" class="banner" name="img" src="images/dish6.png" style="width:1100px;"/>
+               <img alt="" class="banner" src="images/dish6.png" style="width:1100px;"/>
                   
-               <script>
+               <script type="text/javascript">
 
                    var step = 1
 
@@ -102,10 +102,6 @@
                    slideImages()
 
                </script>
-
-               <!--<div class="bannerControlsWpr bannerControlsPrev"><div class="bannerControls"></div></div>
-               <div class="bannerIndicators"><ul></ul></div>
-               <div class="bannerControlWpr bannerControlNext"><div class="bannerControls"></div></div>-->
            </div>
 
            <div id="main">
