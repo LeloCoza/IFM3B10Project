@@ -17,14 +17,18 @@
     <script type="text/javascript" src="Scripts/js/jquery.js"></script>     <!-- JQuery Library -->
     <script type="text/javascript" src="Scripts/js/banner.js"></script>     <!-- JQuery Plugin -->
 
-    <link href="banner.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--<link href="banner.css" rel="stylesheet" type="text/css" media="screen" />-->
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#rotating').simplebanner(); ({
-                timeOut: 300
-            });
-        });
+
+        var image1 = new Image()
+        image1.src = "images/dish6.png"
+
+        var image2 = new Image()
+        image2.src = "images/dish8.png"
+
+        var image3 = new Image()
+        image3.src = "images/fishFingers2.png"
     </script>
 
     <link href="master.css" rel="stylesheet" type="text/css" media="screen" />
@@ -75,18 +79,33 @@
                </ul>
            </div>
 
-           <div id="rotating" class="simpleBanner">
-               <div class="bannerListWpr">
-                   <ul >
-                       <li><img src="images/dish6.png" /></li>
-                       <li><img src="images/dish8.png" /></li>
-                       <li><img src="images/fishFingers2.png" /></li>
-                   </ul>
-               </div>
+           <div style="width:1100px;margin-left:0px;">                
+               <img alt="" class="banner" name="img" src="images/dish6.png" style="width:1100px;"/>
+                  
+               <script>
 
-               <div class="bannerControlsWpr bannerControlsPrev"><div class="bannerControls"></div></div>
+                   var step = 1
+
+                   function slideImages() {
+                       if (!document.images)
+                           return
+
+                       document.images.img.src = eval("image" + step + ".src")
+
+                       if (step < 3)
+                           step++
+                       else
+                           step = 1
+                       setTimeout("slideImages()", 5000)
+                   }
+
+                   slideImages()
+
+               </script>
+
+               <!--<div class="bannerControlsWpr bannerControlsPrev"><div class="bannerControls"></div></div>
                <div class="bannerIndicators"><ul></ul></div>
-               <div class="bannerControlWpr bannerControlNext"><div class="bannerControls"></div></div>
+               <div class="bannerControlWpr bannerControlNext"><div class="bannerControls"></div></div>-->
            </div>
 
            <div id="main">
